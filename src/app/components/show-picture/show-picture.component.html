@@ -1,0 +1,11 @@
+<p>show-picture works!</p>
+
+
+<div class="container">
+  <ul>
+    <li *ngFor="let img of showImg">
+      <img [src]="img.picUrl" (click)="changePic($event)">
+    </li>
+  </ul>
+</div>
+
